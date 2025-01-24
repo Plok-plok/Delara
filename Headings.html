@@ -2,19 +2,67 @@
 <html>
 <head>
     <title>Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 60%;
+            margin-bottom: 30px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        h4 {
+            color: #4CAF50;
+        }
+        h5 {
+            font-family: courier, monospace;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-<h1>The Best Movies</h1>
-<h2>My top 3 movies of all time.</h2>
-<hr/>
-<img src="https://resizing.flixster.com/me1lHqfY_e6LZ0ZrgsOVcGhSYL8=/fit-in/705x460/v2/https://resizing.flixster.com/WKOrCI1pVpSpvXmfaD3NIq0ZalA=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2RiYTFmYWJlLTRhOWYtNDU2Zi04ZjliLTQ2NTI3OWNjYmYyNi53ZWJw" style="width: 150px; height: 200px;" />
-<h4>VENOM</h4>
-<h5 style="font-family:courier;">The movie is a blend of humor, suspense, and intense action, offering an exciting take on the anti-hero genre. Fans of Marvel comics and superhero films will enjoy Venom's unique dynamic and its exploration of good versus evil.</h5>
-<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfeAhrWOqSHvmFR1yc3JlSIIUJnpQ5jpGWoPfNdEegDTJXymtX36zPfCM5Cn1bF11FdUrC3A" style="width: 150px; height: 200px;" />
-<h4>Bad Land Hunters</h4>
-<h5 style="font-family:courier;"> The movie is filled with intense action, suspense, and thrilling chases, making it an entertaining choice for fans of westerns and action-packed stories. Its gripping storyline and strong characters make it a must-watch for those who enjoy high-stakes adventures.</h5>
-<img src="https://m.media-amazon.com/images/M/MV5BOTUwOGE0ZmUtZWUzYi00ZjdkLWE1YTEtMDFjZjNjZWY1ZjM4XkEyXkFqcGc@._V1_.jpg" style="width: 150px; height: 200px;" />
-<h4>The Platform</h4>
-<h5 style="font-family:courier;">It’s a tense, dystopian film that makes you question how far people will go to survive and what happens when resources are limited. Its powerful social commentary, intense atmosphere, and unexpected twists make it a must-watch for fans of psychological thrillers and dystopian narratives.</h5>
+    <div class="container">
+        <h1>The Best Movies</h1>
+        <h2>My top 3 movies of all time.</h2>
+        <hr/>
+
+        <div class="movie">
+            <img src="https://resizing.flixster.com/me1lHqfY_e6LZ0ZrgsOVcGhSYL8=/fit-in/705x460/v2/https://resizing.flixster.com/WKOrCI1pVpSpvXmfaD3NIq0ZalA=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2RiYTFmYWJlLTRhOWYtNDU2Zi04ZjliLTQ2NTI3OWNjYmYyNi53ZWJw" alt="Venom">
+            <h4>VENOM</h4>
+            <h5>The movie is a blend of humor, suspense, and intense action, offering an exciting take on the anti-hero genre. Fans of Marvel comics and superhero films will enjoy Venom's unique dynamic and its exploration of good versus evil.</h5>
+        </div>
+
+        <div class="movie">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfeAhrWOqSHvmFR1yc3JlSIIUJnpQ5jpGWoPfNdEegDTJXymtX36zPfCM5Cn1bF11FdUrC3A" alt="Bad Land Hunters">
+            <h4>Bad Land Hunters</h4>
+            <h5>The movie is filled with intense action, suspense, and thrilling chases, making it an entertaining choice for fans of westerns and action-packed stories. Its gripping storyline and strong characters make it a must-watch for those who enjoy high-stakes adventures.</h5>
+        </div>
+
+        <div class="movie">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTUwOGE0ZmUtZWUzYi00ZjdkLWE1YTEtMDFjZjNjZWY1ZjM4XkEyXkFqcGc@._V1_.jpg" alt="The Platform">
+            <h4>The Platform</h4>
+            <h5>It’s a tense, dystopian film that makes you question how far people will go to survive and what happens when resources are limited. Its powerful social commentary, intense atmosphere, and unexpected twists make it a must-watch for fans of psychological thrillers and dystopian narratives.</h5>
+        </div>
+    </div>
 </body>
 </html>
