@@ -1,23 +1,65 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Images and Anchor Tag</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.container {
+			text-align: center;
+			background-color: white;
+			padding: 20px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+			width: 50%;
+		}
+		h1, h2, h3 {
+			color: #333;
+		}
+		img {
+			width: 300px;
+			height: 200px;
+			margin: 10px 0;
+			border-radius: 5px;
+		}
+		ul {
+			list-style-type: circle;
+			padding: 0;
+			margin: 10px 0;
+		}
+		li {
+			text-align: left;
+		}
+		a {
+			text-decoration: none;
+			color: blue;
+			font-weight: bold;
+		}
+	</style>
 </head>
 <body>
-	<h1>It's My Birthday!</h1>
-	<h2 style="font-family:courier;">It's on [March 15, 2025]</h2>
-	<hr/>
-	<img src="https://img.freepik.com/premium-vector/colorful-happy-birthday-greeting-with-confetti_123891-118201.jpg" style="width: 300px; height: 200px;" />
-	<h3>What to bring:</h3>
-	<ul type="circle" style="display: inline-block; text-align: left;">
-		<li>Money</li>
-		<li>Drinks</li>
-		<li>Food</li>
-	</ul>
-	<h3>This is where you need to go:</h3>
-	<p>
-		<a href="https://www.google.com/maps?q=145+Session+Road+Area+B+Batasan+Hills" target="_blank" style="text-decoration: none; color: blue; font-weight: default;">googlemap</a>
-	</p>
+	<div class="container">
+		<h1>It's My Birthday!</h1>
+		<h2 style="font-family:courier;">It's on [March 15, 2025]</h2>
+		<hr/>
+		<img src="https://img.freepik.com/premium-vector/colorful-happy-birthday-greeting-with-confetti_123891-118201.jpg" alt="Birthday">
+		<h3>What to bring:</h3>
+		<ul>
+			<li>Money</li>
+			<li>Drinks</li>
+			<li>Food</li>
+		</ul>
+		<h3>This is where you need to go:</h3>
+		<p>
+			<a href="https://www.google.com/maps?q=145+Session+Road+Area+B+Batasan+Hills" target="_blank">Google Map</a>
+		</p>
+	</div>
 </body>
 </html>
-
